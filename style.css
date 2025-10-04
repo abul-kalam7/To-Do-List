@@ -1,0 +1,127 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(255, 255, 255);
+}
+
+
+h1 {
+    color: rgb(39, 34, 34);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color:  rgb(233, 233, 233);
+}
+
+.con {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+
+.addButton {
+    margin: 15px 8px 12px 10px;
+    display: flex;
+}
+
+ 
+
+.addButton button {
+    padding: 5px 8px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(91, 90, 107);
+    border: 2px solid #cfcfcf;
+    border-radius: 7px;
+}
+  
+
+ 
+.oneTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+}
+
+.checkboxCon {
+    width: 29px;
+    height: 27px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px ;
+    border  : 1px  solid  rgb(139, 139, 139) ; 
+}
+
+.checkboxCon input {
+    width: 14px;
+    height: 13px;
+}
+
+.taskCon {
+    border-top: 1px solid rgb(145, 145, 145);
+    border-bottom: 1px solid rgb(145, 145, 145);
+    border-radius: 2px;
+    width: 60vw;
+    line-height: 1.5;
+}
+
+.task { 
+    line-height: 1.5;
+    /* padding: 3px 2px; */
+    width: 100%;
+    border: none; 
+    font-size: large;
+    color: rgba(24, 24, 24, 0.842);
+    text-align: start;
+    padding-left: 7px;
+}
+
+
+.deleteCon {
+    width: 30px;
+    height: 27px;
+    background-color: #f1f1f1;
+    border : 1px solid rgb(139, 139, 139); 
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteCon .delete { 
+    padding: 1px 2px;
+    border-radius: 54% 0;
+    border: 2px solid #a8a8a8;
+    background: #ffffff;
+    color: rgba(158, 19, 19, 0.897);
+    font-weight: bold;
+}
+
+
+.remove {
+    display: none;
+}
+
+.complete {
+    text-decoration: line-through rgb(21, 179, 15) 2px;
+}
+
+@media (max-width: 430px){
+  .con{
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .checkboxCon{
+    width: 30px;
+  }
+  .taskCon{
+    width: 85vw;
+  }
+}
