@@ -36,18 +36,19 @@ addButton.addEventListener("click", () => {
    let checkboxc = ul.querySelector(".checkbox")
    checkboxc.addEventListener("click", () => {
       task.classList.add("complete")
- 
-           if (checkboxc.checked ) {  
-            task.disabled = true;
-              con.append(completeSectionCon)
-              completeSectionCon.querySelector(".completeSection").prepend(ul)
-  
-            }else{
-               task.disabled = false;
-                addSection.append(ul)
-                task.classList.remove("complete")
-            }
-             
+
+      if (checkboxc.checked) {
+         task.disabled = true;
+         con.append(completeSectionCon)
+         completeSectionCon.querySelector(".completeSection").prepend(ul)
+         
+
+      } else {
+         task.disabled = false;
+         addSection.append(ul)
+         task.classList.remove("complete")
+      }
+
    })
 
 })
