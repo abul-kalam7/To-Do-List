@@ -110,7 +110,7 @@ h1 {
 }
 
 .complete {
-    text-decoration: line-through rgb(21, 179, 15) 2px;
+    text-decoration: line-through rgb(5, 14, 4) 2px;
 }
 
 @media (max-width: 430px){
