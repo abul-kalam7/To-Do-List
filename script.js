@@ -1,6 +1,12 @@
 let addButton = document.querySelector(".addButton")
 let addSection = document.querySelector(".addSection")
 let con = document.querySelector(".con")
+let completeSectionCon = document.createElement("div");
+completeSectionCon.classList.add("completeSectionCon");
+completeSectionCon.innerHTML = ` <span>Conpleted</span>
+<div class="completeSection"> 
+
+</div>`
 
 addButton.addEventListener("click", () => {
    let ul = document.createElement("ul");
@@ -30,30 +36,18 @@ addButton.addEventListener("click", () => {
    let checkboxc = ul.querySelector(".checkbox")
    checkboxc.addEventListener("click", () => {
       task.classList.add("complete")
-
-      if (checkboxc.checked) {
-         checkboxc.disabled = true;
-         if (checkboxc.disabled == true) {
+ 
+           if (checkboxc.checked ) {  
             task.disabled = true;
-
-           if (task.disabled == true) { 
               con.append(completeSectionCon)
               completeSectionCon.querySelector(".completeSection").prepend(ul)
- 
+  
+            }else{
+               task.disabled = false;
+                addSection.append(ul)
+                task.classList.remove("complete")
             }
-            
-            
-         }
-         
-      }
-
+             
    })
 
 })
-
-let completeSectionCon = document.createElement("div");
-completeSectionCon.classList.add("completeSectionCon");
-completeSectionCon.innerHTML = ` <span>Conpleted</span>
-<div class="completeSection"> 
-
-</div>`
