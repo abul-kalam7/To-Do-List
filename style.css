@@ -20,10 +20,29 @@ h1 {
     margin: 0 auto;
 }
 
+ 
+.completeSectionCon{
+    margin-top: 18px;
+    text-align: start;
+}
+.completeSectionCon span{ 
+    margin-left: 10px;
+    color: rgba(109, 102, 102, 0.952);
+    font-weight: bold;
+}
+
+.completeSection{ 
+    margin-top: 4px;
+    border: 1px solid rgb(5, 224, 240);
+}
+
+
+
 
 .addButton {
     margin: 15px 8px 12px 10px;
     display: flex;
+    width: 60px;
 }
 
  
@@ -109,7 +128,7 @@ h1 {
 }
 
 .complete {
-    text-decoration: line-through rgb(4, 202, 21) 2px;
+    text-decoration: line-through rgb(1, 196, 17) 2px;
 }
 
 @media (max-width: 430px){
