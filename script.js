@@ -32,10 +32,7 @@ checkboxc.addEventListener("click", () => {
     if(checkboxc.checked){
       checkboxc.disabled = true;
       if(checkboxc.disabled = true){
-         task.disabled = true;
-         if(task.disabled = true){
-            addSection.append(ul)
-         }
+         task.disabled = true; 
       }
     }
 
@@ -46,9 +43,4 @@ checkboxc.addEventListener("click", () => {
 
 })
  
-
-// checkbox.addEventListener("change", () => {
-//     if (checkbox.checked) {
-//       checkbox.disabled = true; // lock it after first tick
-//     }
-//   });
+ 
